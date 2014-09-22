@@ -1,0 +1,1 @@
+This is the most common method for implementing display advertisements. Simply replace the ```__APP_ID__``` and ```__PLACEMENT_ID__``` with your own and the placement will be written into the HTML in the same location as the script tag.

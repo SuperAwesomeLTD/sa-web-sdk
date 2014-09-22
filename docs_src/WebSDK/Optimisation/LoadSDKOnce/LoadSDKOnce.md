@@ -1,0 +1,1 @@
+Each example provided in this documentation includes the necessary ```<script>``` tag that will load the SuperAwesome Web SDK. If you have multiple placements on your page, you can load the SDK just once before any of your placements are created and reduce the overhead for your users.

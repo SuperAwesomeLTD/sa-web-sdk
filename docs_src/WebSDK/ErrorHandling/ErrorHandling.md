@@ -1,0 +1,1 @@
+If your page would fail to display correctly if the user's browser is unable to load the SuperAwesome Web SDK, there are methods outlined below that would allow you to detect the problem and prevent it from causing an issue for users.

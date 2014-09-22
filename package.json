@@ -1,0 +1,12 @@
+{
+    "name": "sa-web-sdk",
+    "version": "0.0.1",
+    "dependencies": {},
+    "devDependencies": {
+    	"gulp-imports" : "MarcusLongmuir/gulp-imports",
+		"gulp": "^3.6.1",
+		"gulp-uglify": "^0.2.1",
+		"gulp-watch": "^0.6.2",
+		"sa-docs-to-json": "SuperAwesomeLtd/sa-docs-to-json"
+	}
+}

@@ -1,0 +1,23 @@
+<div id="pre_roll_area" style="width: 480px; height: 320px; position: relative;">
+	<!--CONTENT START--->
+	<div id="my_content" style="width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif; display: none;">CONTENT</div>
+	<!--CONTENT END--->
+</div>
+
+<script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=26"></script>
+<script>
+
+	var show_content = function(play_result){
+		document.getElementById("my_content").style.display = "block";
+	}
+
+	if(typeof SAPreRoll === 'undefined'){
+		show_content(0);
+	} else {
+		var ad = new SAPreRoll(12345);
+		document.getElementById("pre_roll_area").appendChild(ad.element);
+
+		ad.finished(show_content);
+	}
+	
+</script>

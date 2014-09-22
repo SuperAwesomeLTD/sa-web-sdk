@@ -1,0 +1,119 @@
+{
+    "name": "Web SDK",
+    "text": "WebSDK/WebSDK.md",
+    "sections": [
+        {
+            "name": "Topics",
+            "text": "WebSDK/Topics.md"
+        },
+        {
+            "name": "Quick Start",
+            "sections": [
+                {
+                    "name": "Display",
+                    "text": "WebSDK/QuickStart/Display/Display.md",
+                    "sections": [
+                        {
+                            "name": "Write",
+                            "text": "WebSDK/QuickStart/Display/Write/Write.md",
+                            "code": [{
+                                "path": "WebSDK/QuickStart/Display/Write/Write.code",
+                                "runnable_path": "WebSDK/QuickStart/Display/Write/Write_Complete.code",
+                                "type": "html",
+                                "runnable": true
+                            }]
+                        },{
+                            "name": "Manual Placement",
+                            "text": "WebSDK/QuickStart/Display/Manual/Manual.md",
+                            "code": [{
+                                "path": "WebSDK/QuickStart/Display/Manual/Manual.code",
+                                "runnable_path": "WebSDK/QuickStart/Display/Manual/Manual_Complete.code",
+                                "type": "html",
+                                "runnable": true
+                            }]
+                        }
+                    ]
+                },{
+                    "name": "Pre-Roll",
+                    "text": "WebSDK/QuickStart/PreRoll/PreRoll.md",
+                    "sections": [
+                        {
+                            "name": "Write",
+                            "text": "WebSDK/QuickStart/PreRoll/Write/Write.md",
+                            "code": [{
+                                "path": "WebSDK/QuickStart/PreRoll/Write/Write.code",
+                                "runnable_path": "WebSDK/QuickStart/PreRoll/Write/Write_Complete.code",
+                                "type": "html",
+                                "runnable": true
+                            }]
+                        },{
+                            "name": "Manual Placement",
+                            "text": "WebSDK/QuickStart/PreRoll/Manual/Manual.md",
+                            "code": [{
+                                "path": "WebSDK/QuickStart/PreRoll/Manual/Manual.code",
+                                "runnable_path": "WebSDK/QuickStart/PreRoll/Manual/Manual_Complete.code",
+                                "type": "html",
+                                "runnable": true
+                            }]
+                        },{
+                            "name": "Finish Callback",
+                            "text": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.md",
+                            "code": [{
+                                "path": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.code",
+                                "runnable_path": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback_Complete.code",
+                                "type": "html",
+                                "runnable": true
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Optimisation",
+            "text": "WebSDK/Optimisation/Optimisation.md",
+            "sections": [
+                {
+                    "name": "Load SDK Once",
+                    "text": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.md",
+                    "code": [{
+                        "path": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.code",
+                        "runnable_path": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce_Complete.code",
+                        "type": "html",
+                        "runnable": true
+                    }]
+                },{
+                    "name": "Specify App Id",
+                    "text": "WebSDK/Optimisation/AppID/AppID.md",
+                    "code": [{
+                        "path": "WebSDK/Optimisation/AppID/AppID.code",
+                        "type": "html"
+                    }]
+                },{
+                    "name": "Pre-Fetch Pre-Roll Player",
+                    "text": "WebSDK/Optimisation/PreRoll/PreRoll.md",
+                    "code": [{
+                        "path": "WebSDK/Optimisation/PreRoll/PreRoll.code",
+                        "type": "html"
+                    }]
+                }
+            ]
+        },
+        {
+            "name": "Error Handling",
+            "text": "WebSDK/ErrorHandling/ErrorHandling.md",
+            "sections": [
+                {
+                    "name": "Pre-Roll",
+                    "text": "WebSDK/ErrorHandling/PreRoll/PreRoll.md",
+                    "code": [{
+                        "path": "WebSDK/ErrorHandling/PreRoll/PreRoll.code",
+                        "runnable_path": "WebSDK/ErrorHandling/PreRoll/PreRoll_Complete.code",
+                        "type": "html",
+                        "runnable": true
+                    }]
+                }
+            ]
+        }
+    ]
+}

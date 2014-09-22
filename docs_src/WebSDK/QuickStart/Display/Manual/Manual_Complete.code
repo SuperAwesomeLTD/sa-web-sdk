@@ -1,0 +1,6 @@
+<div id="ad_area"></div>
+<script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=26"></script>
+<script>
+	var ad = new SADisplay(5233743);
+	document.getElementById("ad_area").appendChild(ad.element);
+</script>

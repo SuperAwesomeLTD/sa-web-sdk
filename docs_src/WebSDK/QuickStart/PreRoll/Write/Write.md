@@ -1,0 +1,1 @@
+This method allows you to place the script tag where you would like the pre-roll element to appear on the page. Simply replace the ```__APP_ID__``` and ```__PREROLL_ID__``` in the snippet.

@@ -1,0 +1,1 @@
+The SuperAwesome Web SDK (Software Development Kit) lets you to easily add COPPA-compliant pre-roll and display advertisements to your website.
