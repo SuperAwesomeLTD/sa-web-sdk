@@ -21,7 +21,7 @@
                                     {
                                         "name": "__APP_ID__",
                                         "display_name": "App Id",
-                                        "demo_value": 26
+                                        "demo_value": 14
                                     },{
                                         "name": "__PLACEMENT_ID__",
                                         "display_name": "Placement Id",
@@ -34,9 +34,19 @@
                             "text": "WebSDK/QuickStart/Display/Manual/Manual.md",
                             "code": [{
                                 "path": "WebSDK/QuickStart/Display/Manual/Manual.code",
-                                "runnable_path": "WebSDK/QuickStart/Display/Manual/Manual_Complete.code",
                                 "type": "html",
-                                "runnable": true
+                                "runnable": true,
+                                "variables": [
+                                    {
+                                        "name": "__APP_ID__",
+                                        "display_name": "App Id",
+                                        "demo_value": 14
+                                    },{
+                                        "name": "__PLACEMENT_ID__",
+                                        "display_name": "Placement Id",
+                                        "demo_value": 5233743
+                                    }
+                                ]
                             }]
                         }
                     ]
@@ -49,27 +59,57 @@
                             "text": "WebSDK/QuickStart/PreRoll/Write/Write.md",
                             "code": [{
                                 "path": "WebSDK/QuickStart/PreRoll/Write/Write.code",
-                                "runnable_path": "WebSDK/QuickStart/PreRoll/Write/Write_Complete.code",
                                 "type": "html",
-                                "runnable": true
+                                "runnable": true,
+                                "variables": [
+                                    {
+                                        "name": "__APP_ID__",
+                                        "display_name": "App Id",
+                                        "demo_value": 14
+                                    },{
+                                        "name": "__PREROLL_ID__",
+                                        "display_name": "Pre-Roll Id",
+                                        "demo_value": 12345
+                                    }
+                                ]
                             }]
                         },{
                             "name": "Manual Placement",
                             "text": "WebSDK/QuickStart/PreRoll/Manual/Manual.md",
                             "code": [{
                                 "path": "WebSDK/QuickStart/PreRoll/Manual/Manual.code",
-                                "runnable_path": "WebSDK/QuickStart/PreRoll/Manual/Manual_Complete.code",
                                 "type": "html",
-                                "runnable": true
+                                "runnable": true,
+                                "variables": [
+                                    {
+                                        "name": "__APP_ID__",
+                                        "display_name": "App Id",
+                                        "demo_value": 14
+                                    },{
+                                        "name": "__PREROLL_ID__",
+                                        "display_name": "Pre-Roll Id",
+                                        "demo_value": 12345
+                                    }
+                                ]
                             }]
                         },{
                             "name": "Finish Callback",
                             "text": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.md",
                             "code": [{
                                 "path": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.code",
-                                "runnable_path": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback_Complete.code",
                                 "type": "html",
-                                "runnable": true
+                                "runnable": true,
+                                "variables": [
+                                    {
+                                        "name": "__APP_ID__",
+                                        "display_name": "App Id",
+                                        "demo_value": 14
+                                    },{
+                                        "name": "__PREROLL_ID__",
+                                        "display_name": "Pre-Roll Id",
+                                        "demo_value": 12345
+                                    }
+                                ]
                             }]
                         }
                     ]
@@ -87,9 +127,27 @@
                     "text": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.md",
                     "code": [{
                         "path": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.code",
-                        "runnable_path": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce_Complete.code",
                         "type": "html",
-                        "runnable": true
+                        "runnable": true,
+                        "variables": [
+                            {
+                                "name": "__APP_ID__",
+                                "display_name": "App Id",
+                                "demo_value": 14
+                            },{
+                                "name": "__PLACEMENT_ID_1__",
+                                "display_name": "Placement Id 1",
+                                "demo_value": 5233743
+                            },{
+                                "name": "__PLACEMENT_ID_2__",
+                                "display_name": "Placement Id 2",
+                                "demo_value": 5233743
+                            },{
+                                "name": "__PREROLL_ID__",
+                                "display_name": "Pre-Roll Id",
+                                "demo_value": 12345
+                            }
+                        ]
                     }]
                 },{
                     "name": "Specify App Id",
@@ -117,9 +175,19 @@
                     "text": "WebSDK/ErrorHandling/PreRoll/PreRoll.md",
                     "code": [{
                         "path": "WebSDK/ErrorHandling/PreRoll/PreRoll.code",
-                        "runnable_path": "WebSDK/ErrorHandling/PreRoll/PreRoll_Complete.code",
                         "type": "html",
-                        "runnable": true
+                        "runnable": true,
+                        "variables": [
+                            {
+                                "name": "__APP_ID__",
+                                "display_name": "App Id",
+                                "demo_value": 14
+                            },{
+                                "name": "__PREROLL_ID__",
+                                "display_name": "Pre-Roll Id",
+                                "demo_value": 12345
+                            }
+                        ]
                     }]
                 }
             ]

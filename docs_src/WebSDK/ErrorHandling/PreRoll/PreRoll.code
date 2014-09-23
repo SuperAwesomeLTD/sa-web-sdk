@@ -14,7 +14,7 @@
 	if(typeof SAPreRoll === 'undefined'){
 		show_content(0);
 	} else {
-		var ad = new SAPreRoll(__PLACEMENT_ID__);
+		var ad = new SAPreRoll(__PREROLL_ID__);
 		document.getElementById("pre_roll_area").appendChild(ad.element);
 
 		ad.finished(show_content);

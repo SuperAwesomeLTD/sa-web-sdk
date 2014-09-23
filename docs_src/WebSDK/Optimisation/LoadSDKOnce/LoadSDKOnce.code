@@ -3,8 +3,8 @@
 
 <!---DISPLAY ADS--->
 <script>
-	new SADisplay(__PLACEMENT_ID__).write();
-	new SADisplay(__ANOTHER_PLACEMENT_ID__).write();
+	new SADisplay(__PLACEMENT_ID_1__).write();
+	new SADisplay(__PLACEMENT_ID_2__).write();
 </script>
 
 <!---PRE-ROLL AD--->

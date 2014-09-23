@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-web-sdk/master/docs/images/display/example_sagames.png?token=669895__eyJzY29wZSI6IlJhd0Jsb2I6U3VwZXJBd2Vzb21lTFREL3NhLXdlYi1zZGsvbWFzdGVyL2RvY3MvaW1hZ2VzL2Rpc3BsYXkvZXhhbXBsZV9zYWdhbWVzLnBuZyIsImV4cGlyZXMiOjE0MTIwODcyMzd9--9fa006397bda939bc03e40647b82bf9e8aba96a7 "Example Display Ad")
+
 Most ad tags use ```document.write``` to write to the page as it is being loaded. If you would like to use this method, follow the [Write](/docs/websdk/Quick Start/Display/Write) instructions below.
 
-SuperAwesome's Web SDK also presents the option of creating an ad element and placing it after the page has loaded - this is preferable if the ad should needs to be placed within a container that is generated using Javascript or in a template that is loaded asynchronously. If you would like to use this method, follow the [Manual Placement](/docs/websdk/Quick Start/Display/Manual Placement) instructions below.
+SuperAwesome's Web SDK also presents the option of creating an ad element and placing it after the page has loaded - this is preferable if the ad needs to be placed within a container that is generated using Javascript or in a template that is loaded asynchronously. If you would like to use this method, follow the [Manual Placement](/docs/websdk/Quick Start/Display/Manual Placement) instructions below.
