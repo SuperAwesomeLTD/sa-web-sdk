@@ -3,11 +3,8 @@
     "text": "WebSDK/WebSDK.md",
     "sections": [
         {
-            "name": "Topics",
-            "text": "WebSDK/Topics.md"
-        },
-        {
             "name": "Quick Start",
+            "text": "WebSDK/QuickStart/QuickStart.md",
             "sections": [
                 {
                     "name": "Display",
@@ -18,9 +15,19 @@
                             "text": "WebSDK/QuickStart/Display/Write/Write.md",
                             "code": [{
                                 "path": "WebSDK/QuickStart/Display/Write/Write.code",
-                                "runnable_path": "WebSDK/QuickStart/Display/Write/Write_Complete.code",
                                 "type": "html",
-                                "runnable": true
+                                "runnable": true,
+                                "variables": [
+                                    {
+                                        "name": "__APP_ID__",
+                                        "display_name": "App Id",
+                                        "demo_value": 26
+                                    },{
+                                        "name": "__PLACEMENT_ID__",
+                                        "display_name": "Placement Id",
+                                        "demo_value": 5233743
+                                    }
+                                ]
                             }]
                         },{
                             "name": "Manual Placement",
@@ -68,8 +75,10 @@
                     ]
                 }
             ]
-        },
-        {
+        },{
+            "name": "Topics",
+            "text": "WebSDK/Topics.md"
+        },{
             "name": "Optimisation",
             "text": "WebSDK/Optimisation/Optimisation.md",
             "sections": [

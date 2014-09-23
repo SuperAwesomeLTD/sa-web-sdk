@@ -6,6 +6,6 @@ The ```show_content``` function changes the ```display``` css property to ```blo
 
 If ```SAPreRoll``` is undefined (the SDK failed to load) then ```show_content``` is called immediately, showing the content.
 
-If ```SAPreRoll``` was loaded successfully then the pre-roll element is created and show_content is passed as the parameter to ```ad.finished()``` and will be called after the pre-roll has ended.
+If ```SAPreRoll``` was loaded successfully then the pre-roll element is created and ```show_content``` is passed as the parameter to ```ad.finished()``` and will be called after the pre-roll has ended.
 
 To test the case where the SDK fails to load, use an invalid URL for the SDK script tag.

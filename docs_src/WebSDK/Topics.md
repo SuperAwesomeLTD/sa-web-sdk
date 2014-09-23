@@ -1,4 +1,5 @@
-* [Quick Start](/docs/websdk/Quick Start)
-	* [Display](/docs/websdk/Quick Start/Display)
-	* [Pre-Roll](/docs/websdk/Quick Start/Pre-Roll)
+* [Optimisation](/docs/websdk/Optimisation)
+	* [Load SDK Once](/docs/websdk/Optimisation/Load SDK Once)
+	* [Specify App Id](/docs/websdk/Optimisation/Specify App Id)
+	* [Pre-Fetch Pre-Roll Player](/docs/websdk/Optimisation/Pre-Fetch Pre-Roll Player)
 * [Error Handling](/docs/websdk/Error Handling)

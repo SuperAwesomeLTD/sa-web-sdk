@@ -1,5 +1,5 @@
-SuperAwesome's Web SDK allows you to add pre-roll placements in the same manner as display placements - the pre-roll element can be written to the page as it is being loaded using ```document.write```, or appended manually.
+SuperAwesome's Web SDK allows you to add pre-roll placements in the same manner as display placements - the pre-roll element can be written to the page as it is being loaded using [```document.write```](/docs/websdk/Quick Start/Pre-Roll/Write), or [appended manually](/docs/websdk/Quick Start/Pre-Roll/Manual Placement).
 
 Both methods will create an element that will fill the maximum space available to it and overlay other content in the same container (using the CSS rule ```position:absolute; width:100%; height:100%; z-index: 999;```). To constrain the dimensions of the pre-roll element, place it within a ```div``` with defined dimensions and the CSS rule ```position:relative;```.
 
-__CodePen Pre-Roll demos may not work in Firefox of Internet Explorer. This is due to CodePen disabling Flash, which is used as the fallback video player in these browsers.__
+__CodePen Pre-Roll demos may not work in Firefox or Internet Explorer. This is due to CodePen disabling Flash, which is used as the fallback video player in these browsers.__
