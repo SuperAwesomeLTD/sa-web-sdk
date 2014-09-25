@@ -3,6 +3,10 @@
     "text": "<p>The SuperAwesome Web SDK (Software Development Kit) lets you to easily add COPPA-compliant pre-roll and display advertisements to your website.</p>\n",
     "sections": [
         {
+            "name": "Getting Started",
+            "text": "<p>If you haven&#39;t already registered your app on the SuperAwesome Dashboard, you can do that by going to <a href=\"http://dashboard.superawesome.tv\">http://dashboard.superawesome.tv</a>.</p>\n<p><img src=\"/doc_files/iOSSDK/dashboard.png\" alt=\"\" title=\"Registering an app on the dashboard\"></p>\n<p>Once your app is registered, you can create placements for it and use the documentation provided below to integrate these placements into your website.</p>\n"
+        },
+        {
             "name": "Quick Start",
             "text": "<p>Jump straight to the snippets you need.</p>\n<ul>\n<li><a href=\"/docs/websdk/Quick Start/Display\">Display</a></li>\n<li><a href=\"/docs/websdk/Quick Start/Pre-Roll\">Pre-Roll</a></li>\n</ul>\n",
             "sections": [
@@ -77,7 +81,7 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 12345
+                                            "demo_value": 314187
                                         }
                                     ],
                                     "contents": "<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n\n\t<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n\t<script>\n\t\tvar ad = new SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n\t\n</div>"
@@ -100,7 +104,7 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 12345
+                                            "demo_value": 314187
                                         }
                                     ],
                                     "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n</script>"
@@ -123,7 +127,7 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 12345
+                                            "demo_value": 314187
                                         }
                                     ],
                                     "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t//Optional callback\n\tad.finished(function(play_result){\n\t\talert(play_result);\n\t})\n</script>"
@@ -168,7 +172,7 @@
                                 {
                                     "name": "__PREROLL_ID__",
                                     "display_name": "Pre-Roll Id",
-                                    "demo_value": 12345
+                                    "demo_value": 314187
                                 }
                             ],
                             "contents": "<!---SINGLE SDK SCRIPT--->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__&pre_roll=true\"></script>\n\n<!---DISPLAY ADS--->\n<script>\n\tnew SADisplay(__PLACEMENT_ID_1__).write();\n\tnew SADisplay(__PLACEMENT_ID_2__).write();\n</script>\n\n<!---PRE-ROLL AD--->\n<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<script>\n\t\tnew SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n</div>"
@@ -217,7 +221,7 @@
                                 {
                                     "name": "__PREROLL_ID__",
                                     "display_name": "Pre-Roll Id",
-                                    "demo_value": 12345
+                                    "demo_value": 314187
                                 }
                             ],
                             "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div id=\"my_content\" style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif; display: none;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\n\tvar show_content = function(play_result){\n\t\tdocument.getElementById(\"my_content\").style.display = \"block\";\n\t}\n\n\tif(typeof SAPreRoll === 'undefined'){\n\t\tshow_content(0);\n\t} else {\n\t\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\t\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t\tad.finished(show_content);\n\t}\n\t\n</script>"
@@ -226,6 +230,10 @@
                     "text": "<p>If you are starting or revealing your content upon receiving a callback from <code>SAPreRoll.finished()</code>, then you may want to detect whether <code>SAPreRoll</code> was loaded successfully and if it was not, immediately show your content.</p>\n<p>In the example to the right, the <code>div</code> with id <code>my_content</code> is initially hidden using <code>style=&quot;display:none;&quot;</code>.</p>\n<p>The <code>show_content</code> function changes the <code>display</code> css property to <code>block</code> to reveal the content.</p>\n<p>If <code>SAPreRoll</code> is undefined (the SDK failed to load) then <code>show_content</code> is called immediately, showing the content.</p>\n<p>If <code>SAPreRoll</code> was loaded successfully then the pre-roll element is created and <code>show_content</code> is passed as the parameter to <code>ad.finished()</code> and will be called after the pre-roll has ended.</p>\n<p>To test the case where the SDK fails to load, use an invalid URL for the SDK script tag.</p>\n"
                 }
             ]
+        },
+        {
+            "name": "Technical Support",
+            "text": "<p>If you have any questions or you need technical support, please, do not hesitate to contact us at <a href=\"devsupport@superawesome.tv\">devsupport@superawesome.tv</a>. We will make every attempt to answer your inquiry as quickly as possible.</p>\n"
         }
     ]
 }

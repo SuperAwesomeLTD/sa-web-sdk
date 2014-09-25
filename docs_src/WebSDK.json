@@ -3,6 +3,10 @@
     "text": "WebSDK/WebSDK.md",
     "sections": [
         {
+            "name": "Getting Started",
+            "text": "WebSDK/GettingStarted.md"
+        },
+        {
             "name": "Quick Start",
             "text": "WebSDK/QuickStart/QuickStart.md",
             "sections": [
@@ -69,7 +73,7 @@
                                     },{
                                         "name": "__PREROLL_ID__",
                                         "display_name": "Pre-Roll Id",
-                                        "demo_value": 12345
+                                        "demo_value": 314187
                                     }
                                 ]
                             }]
@@ -88,7 +92,7 @@
                                     },{
                                         "name": "__PREROLL_ID__",
                                         "display_name": "Pre-Roll Id",
-                                        "demo_value": 12345
+                                        "demo_value": 314187
                                     }
                                 ]
                             }]
@@ -107,7 +111,7 @@
                                     },{
                                         "name": "__PREROLL_ID__",
                                         "display_name": "Pre-Roll Id",
-                                        "demo_value": 12345
+                                        "demo_value": 314187
                                     }
                                 ]
                             }]
@@ -145,7 +149,7 @@
                             },{
                                 "name": "__PREROLL_ID__",
                                 "display_name": "Pre-Roll Id",
-                                "demo_value": 12345
+                                "demo_value": 314187
                             }
                         ]
                     }]
@@ -185,12 +189,16 @@
                             },{
                                 "name": "__PREROLL_ID__",
                                 "display_name": "Pre-Roll Id",
-                                "demo_value": 12345
+                                "demo_value": 314187
                             }
                         ]
                     }]
                 }
             ]
+        },
+        {
+            "name": "Technical Support",
+            "text": "WebSDK/TechnicalSupport.md"
         }
     ]
 }
