@@ -5,7 +5,7 @@
 
 	<script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__"></script>
 	<script>
-		var ad = new SAPreRoll(__PREROLL_ID__).write();
+		new SAPreRoll(__PREROLL_ID__).write();
 	</script>
 	
 </div>

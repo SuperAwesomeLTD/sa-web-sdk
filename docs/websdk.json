@@ -29,13 +29,13 @@
                                         {
                                             "name": "__PLACEMENT_ID__",
                                             "display_name": "Placement Id",
-                                            "demo_value": 5233743
+                                            "demo_value": 5246463
                                         }
                                     ],
                                     "contents": "<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n<script>\n\tnew SADisplay(__PLACEMENT_ID__).write();\n</script>"
                                 }
                             ],
-                            "text": "<p>This is the most common method for implementing display advertisements. Simply replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and the placement will be written into the HTML in the same location as the script tag.</p>\n"
+                            "text": "<p>The code snippet to the right shows how to write placements to the page using <code>document.write</code>. This is the most common method for implementing display advertisements. Simply replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and the placement will be written into the HTML in the same location as the script tag.</p>\n"
                         },
                         {
                             "name": "Manual Placement",
@@ -52,13 +52,13 @@
                                         {
                                             "name": "__PLACEMENT_ID__",
                                             "display_name": "Placement Id",
-                                            "demo_value": 5233743
+                                            "demo_value": 5246463
                                         }
                                     ],
                                     "contents": "<div id=\"ad_area\"></div>\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SADisplay(__PLACEMENT_ID__);\n\tdocument.getElementById(\"ad_area\").appendChild(ad.element);\n</script>"
                                 }
                             ],
-                            "text": "<p>This method allows you much more control over how the placement is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the placement after the initial document load.</p>\n<p>To use this method, replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the placement is inserted into the <code>div</code> with id <code>&quot;ad_area&quot;</code>.</p>\n"
+                            "text": "<p>The code snippet to the right shows how to manually insert the placement using <code>.appendChild</code> on a parent element. This method allows you much more control over how the placement is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the placement after the initial document load.</p>\n<p>To use this method, replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the placement is inserted into the <code>div</code> with id <code>&quot;ad_area&quot;</code>.</p>\n"
                         }
                     ]
                 },
@@ -81,13 +81,13 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 314187
+                                            "demo_value": 314228
                                         }
                                     ],
-                                    "contents": "<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n\n\t<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n\t<script>\n\t\tvar ad = new SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n\t\n</div>"
+                                    "contents": "<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n\n\t<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n\t<script>\n\t\tnew SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n\t\n</div>"
                                 }
                             ],
-                            "text": "<p>This method allows you to place the script tag where you would like the pre-roll element to appear on the page. Simply replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> in the snippet.</p>\n"
+                            "text": "<p>The code snippet to the right shows how to write pre-roll elements to the page using <code>document.write</code>. This method allows you to place the script tag where you would like the pre-roll element to appear on the page. Simply replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> in the snippet.</p>\n"
                         },
                         {
                             "name": "Manual Placement",
@@ -104,13 +104,13 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 314187
+                                            "demo_value": 314228
                                         }
                                     ],
                                     "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n</script>"
                                 }
                             ],
-                            "text": "<p>This method allows you much more control over how the pre-roll element is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the pre-roll element after the initial document load.</p>\n<p>Replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the pre-roll element is inserted into the <code>div</code> with id <code>&quot;pre_roll_area&quot;</code>.</p>\n"
+                            "text": "<p>The code snippet to the right shows how to manually insert the pre-roll element using <code>.appendChild</code> on a parent element. This method allows you much more control over how the pre-roll element is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the pre-roll element after the initial document load.</p>\n<p>Replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the pre-roll element is inserted into the <code>div</code> with id <code>&quot;pre_roll_area&quot;</code>.</p>\n"
                         },
                         {
                             "name": "Finish Callback",
@@ -127,7 +127,7 @@
                                         {
                                             "name": "__PREROLL_ID__",
                                             "display_name": "Pre-Roll Id",
-                                            "demo_value": 314187
+                                            "demo_value": 314228
                                         }
                                     ],
                                     "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t//Optional callback\n\tad.finished(function(play_result){\n\t\talert(play_result);\n\t})\n</script>"
@@ -162,17 +162,17 @@
                                 {
                                     "name": "__PLACEMENT_ID_1__",
                                     "display_name": "Placement Id 1",
-                                    "demo_value": 5233743
+                                    "demo_value": 5246464
                                 },
                                 {
                                     "name": "__PLACEMENT_ID_2__",
                                     "display_name": "Placement Id 2",
-                                    "demo_value": 5233743
+                                    "demo_value": 5246463
                                 },
                                 {
                                     "name": "__PREROLL_ID__",
                                     "display_name": "Pre-Roll Id",
-                                    "demo_value": 314187
+                                    "demo_value": 314228
                                 }
                             ],
                             "contents": "<!---SINGLE SDK SCRIPT--->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__&pre_roll=true\"></script>\n\n<!---DISPLAY ADS--->\n<script>\n\tnew SADisplay(__PLACEMENT_ID_1__).write();\n\tnew SADisplay(__PLACEMENT_ID_2__).write();\n</script>\n\n<!---PRE-ROLL AD--->\n<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<script>\n\t\tnew SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n</div>"
@@ -221,7 +221,7 @@
                                 {
                                     "name": "__PREROLL_ID__",
                                     "display_name": "Pre-Roll Id",
-                                    "demo_value": 314187
+                                    "demo_value": 314228
                                 }
                             ],
                             "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START--->\n\t<div id=\"my_content\" style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif; display: none;\">CONTENT</div>\n\t<!--CONTENT END--->\n</div>\n\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\n\tvar show_content = function(play_result){\n\t\tdocument.getElementById(\"my_content\").style.display = \"block\";\n\t}\n\n\tif(typeof SAPreRoll === 'undefined'){\n\t\tshow_content(0);\n\t} else {\n\t\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\t\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t\tad.finished(show_content);\n\t}\n\t\n</script>"
