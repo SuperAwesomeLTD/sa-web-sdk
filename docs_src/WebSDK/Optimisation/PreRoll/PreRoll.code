@@ -1,5 +1,5 @@
-<!--Without pre_roll=true--->
+<!--Without pre_roll=true-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__"></script>
 
-<!--With pre_roll=true--->
+<!--With pre_roll=true-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__&pre_roll=true"></script>

@@ -1,7 +1,7 @@
 <div id="pre_roll_area" style="width: 480px; height: 320px; position: relative;">
-	<!--CONTENT START--->
+	<!--CONTENT START-->
 	<div id="my_content" style="width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif; display: none;">CONTENT</div>
-	<!--CONTENT END--->
+	<!--CONTENT END-->
 </div>
 
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__"></script>

@@ -1,5 +1,5 @@
-<!--No app_id--->
+<!--No app_id-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js"></script>
 
-<!--With app_id--->
+<!--With app_id-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__"></script>
