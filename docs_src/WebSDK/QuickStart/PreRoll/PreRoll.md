@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-web-sdk/master/docs/images/pre_roll/example_sagames.png?token=669895__eyJzY29wZSI6IlJhd0Jsb2I6U3VwZXJBd2Vzb21lTFREL3NhLXdlYi1zZGsvbWFzdGVyL2RvY3MvaW1hZ2VzL3ByZV9yb2xsL2V4YW1wbGVfc2FnYW1lcy5wbmciLCJleHBpcmVzIjoxNDEyMDg4OTYyfQ%3D%3D--53a78e896ae7abc86a0db425e344425261aa0ea1 "Example Pre-Roll Ad")
+![](https://s3-eu-west-1.amazonaws.com/developer.superawesome.tv/pre_roll_example_sagames.png "Example Pre-Roll Ad")
 
 SuperAwesome's Web SDK allows you to add pre-roll placements in the same manner as display placements - the pre-roll element can be written to the page as it is being loaded using [```document.write```](/docs/websdk/Quick Start/Pre-Roll/Write), or [appended manually](/docs/websdk/Quick Start/Pre-Roll/Manual Placement).
 

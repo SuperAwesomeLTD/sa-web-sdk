@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/SuperAwesomeLTD/sa-web-sdk/master/docs/images/display/example_sagames.png?token=669895__eyJzY29wZSI6IlJhd0Jsb2I6U3VwZXJBd2Vzb21lTFREL3NhLXdlYi1zZGsvbWFzdGVyL2RvY3MvaW1hZ2VzL2Rpc3BsYXkvZXhhbXBsZV9zYWdhbWVzLnBuZyIsImV4cGlyZXMiOjE0MTIwODcyMzd9--9fa006397bda939bc03e40647b82bf9e8aba96a7 "Example Display Ad")
+![](https://s3-eu-west-1.amazonaws.com/developer.superawesome.tv/display_example_sagames.png "Example Display Ad")
 
 Most ad tags use ```document.write``` to write to the page as it is being loaded. If you would like to use this method, follow the [Write](/docs/websdk/Quick Start/Display/Write) instructions below.
 
