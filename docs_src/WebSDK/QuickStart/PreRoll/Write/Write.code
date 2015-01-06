@@ -1,9 +1,11 @@
+<!--Include this script tag once per page-->
+<script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__"></script>
+
 <div style="width: 480px; height: 320px; position: relative;">
 	<!--CONTENT START-->
 	<div style="width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;">CONTENT</div>
 	<!--CONTENT END-->
 
-	<script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__"></script>
 	<script>
 		new SAPreRoll(__PREROLL_ID__).write();
 	</script>

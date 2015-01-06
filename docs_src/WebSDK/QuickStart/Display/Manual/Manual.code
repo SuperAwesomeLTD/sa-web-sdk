@@ -1,5 +1,7 @@
-<div id="ad_area"></div>
+<!--Include this script tag once per page-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__"></script>
+
+<div id="ad_area"></div>
 <script>
 	var ad = new SADisplay(__PLACEMENT_ID__);
 	document.getElementById("ad_area").appendChild(ad.element);

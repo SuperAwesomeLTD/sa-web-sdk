@@ -1,4 +1,6 @@
+<!--Include this script tag once per page-->
 <script type="text/javascript" src="http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__"></script>
+
 <script>
 	new SADisplay(__PLACEMENT_ID__).write();
 </script>
