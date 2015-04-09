@@ -197,6 +197,10 @@
             ]
         },
         {
+            "name": "Demo Placements",
+            "text": "WebSDK/DemoPlacements.md"
+        },
+        {
             "name": "Technical Support",
             "text": "WebSDK/TechnicalSupport.md"
         }

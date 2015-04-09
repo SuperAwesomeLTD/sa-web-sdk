@@ -4,7 +4,7 @@
     "sections": [
         {
             "name": "Getting Started",
-            "text": "<p>If you haven&#39;t already registered your app on the SuperAwesome Dashboard, you can do that by going to <a href=\"http://dashboard.superawesome.tv\">http://dashboard.superawesome.tv</a>.</p>\n<p><img src=\"/doc_files/WebSDK/dashboard.png\" alt=\"\" title=\"Registering an app on the dashboard\"></p>\n<p>Once your app is registered, you can create placements for it and use the documentation provided below to integrate these placements into your website.</p>\n"
+            "text": "<p>If you haven&#39;t already registered your app on the SuperAwesome Dashboard, you can do that by going to <a href=\"http://dashboard.superawesome.tv\">http://dashboard.superawesome.tv</a>. Before we approve your user, you can start testing with our <a href=\"/docs/websdk/Demo%20Placements\">demo placements</a>.</p>\n<p><img src=\"/doc_files/WebSDK/dashboard.png\" alt=\"\" title=\"Registering an app on the dashboard\"></p>\n<p>Once your app is registered, you can create placements for it and use the documentation provided below to integrate these placements into your website.</p>\n"
         },
         {
             "name": "Quick Start",
@@ -230,6 +230,10 @@
                     "text": "<p>If you are starting or revealing your content upon receiving a callback from <code>SAPreRoll.finished()</code>, then you may want to detect whether <code>SAPreRoll</code> was loaded successfully and if it was not, immediately show your content.</p>\n<p>In the example to the right, the <code>div</code> with id <code>my_content</code> is initially hidden using <code>style=&quot;display:none;&quot;</code>.</p>\n<p>The <code>show_content</code> function changes the <code>display</code> css property to <code>block</code> to reveal the content.</p>\n<p>If <code>SAPreRoll</code> is undefined (the SDK failed to load) then <code>show_content</code> is called immediately, showing the content.</p>\n<p>If <code>SAPreRoll</code> was loaded successfully then the pre-roll element is created and <code>show_content</code> is passed as the parameter to <code>ad.finished()</code> and will be called after the pre-roll has ended.</p>\n<p>To test the case where the SDK fails to load, use an invalid URL for the SDK script tag.</p>\n"
                 }
             ]
+        },
+        {
+            "name": "Demo Placements",
+            "text": "<p>The following placements can be used for testing. These placements have a 100% fill rate.</p>\n<table>\n<thead>\n<tr>\n<th>App ID</th>\n<th>Placement ID</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>14</td>\n<td>5246475</td>\n<td>320x50 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246476</td>\n<td>300x50 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246463</td>\n<td>728x90 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246472</td>\n<td>300x250 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246468</td>\n<td>120x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246469</td>\n<td>160x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246470</td>\n<td>300x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246464</td>\n<td>468x60 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>314228</td>\n<td>video</td>\n</tr>\n</tbody>\n</table>\n"
         },
         {
             "name": "Technical Support",
