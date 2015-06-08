@@ -1,24 +1,24 @@
 {
     "name": "Web SDK",
-    "text": "WebSDK/WebSDK.md",
+    "text": "WebSDK.md",
     "sections": [
         {
             "name": "Getting Started",
-            "text": "WebSDK/GettingStarted.md"
+            "text": "GettingStarted.md"
         },
         {
             "name": "Quick Start",
-            "text": "WebSDK/QuickStart/QuickStart.md",
+            "text": "QuickStart/QuickStart.md",
             "sections": [
                 {
                     "name": "Display",
-                    "text": "WebSDK/QuickStart/Display/Display.md",
+                    "text": "QuickStart/Display/Display.md",
                     "sections": [
                         {
                             "name": "Write",
-                            "text": "WebSDK/QuickStart/Display/Write/Write.md",
+                            "text": "QuickStart/Display/Write/Write.md",
                             "code": [{
-                                "path": "WebSDK/QuickStart/Display/Write/Write.code",
+                                "path": "QuickStart/Display/Write/Write.code",
                                 "type": "html",
                                 "runnable": true,
                                 "variables": [
@@ -35,9 +35,9 @@
                             }]
                         },{
                             "name": "Manual Placement",
-                            "text": "WebSDK/QuickStart/Display/Manual/Manual.md",
+                            "text": "QuickStart/Display/Manual/Manual.md",
                             "code": [{
-                                "path": "WebSDK/QuickStart/Display/Manual/Manual.code",
+                                "path": "QuickStart/Display/Manual/Manual.code",
                                 "type": "html",
                                 "runnable": true,
                                 "variables": [
@@ -56,13 +56,13 @@
                     ]
                 },{
                     "name": "Pre-Roll",
-                    "text": "WebSDK/QuickStart/PreRoll/PreRoll.md",
+                    "text": "QuickStart/PreRoll/PreRoll.md",
                     "sections": [
                         {
                             "name": "Write",
-                            "text": "WebSDK/QuickStart/PreRoll/Write/Write.md",
+                            "text": "QuickStart/PreRoll/Write/Write.md",
                             "code": [{
-                                "path": "WebSDK/QuickStart/PreRoll/Write/Write.code",
+                                "path": "QuickStart/PreRoll/Write/Write.code",
                                 "type": "html",
                                 "runnable": true,
                                 "variables": [
@@ -79,9 +79,9 @@
                             }]
                         },{
                             "name": "Manual Placement",
-                            "text": "WebSDK/QuickStart/PreRoll/Manual/Manual.md",
+                            "text": "QuickStart/PreRoll/Manual/Manual.md",
                             "code": [{
-                                "path": "WebSDK/QuickStart/PreRoll/Manual/Manual.code",
+                                "path": "QuickStart/PreRoll/Manual/Manual.code",
                                 "type": "html",
                                 "runnable": true,
                                 "variables": [
@@ -98,9 +98,9 @@
                             }]
                         },{
                             "name": "Finish Callback",
-                            "text": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.md",
+                            "text": "QuickStart/PreRoll/FinishCallback/FinishCallback.md",
                             "code": [{
-                                "path": "WebSDK/QuickStart/PreRoll/FinishCallback/FinishCallback.code",
+                                "path": "QuickStart/PreRoll/FinishCallback/FinishCallback.code",
                                 "type": "html",
                                 "runnable": true,
                                 "variables": [
@@ -121,16 +121,16 @@
             ]
         },{
             "name": "Topics",
-            "text": "WebSDK/Topics.md"
+            "text": "Topics.md"
         },{
             "name": "Optimisation",
-            "text": "WebSDK/Optimisation/Optimisation.md",
+            "text": "Optimisation/Optimisation.md",
             "sections": [
                 {
                     "name": "Load SDK Once",
-                    "text": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.md",
+                    "text": "Optimisation/LoadSDKOnce/LoadSDKOnce.md",
                     "code": [{
-                        "path": "WebSDK/Optimisation/LoadSDKOnce/LoadSDKOnce.code",
+                        "path": "Optimisation/LoadSDKOnce/LoadSDKOnce.code",
                         "type": "html",
                         "runnable": true,
                         "variables": [
@@ -155,16 +155,16 @@
                     }]
                 },{
                     "name": "Specify App Id",
-                    "text": "WebSDK/Optimisation/AppID/AppID.md",
+                    "text": "Optimisation/AppID/AppID.md",
                     "code": [{
-                        "path": "WebSDK/Optimisation/AppID/AppID.code",
+                        "path": "Optimisation/AppID/AppID.code",
                         "type": "html"
                     }]
                 },{
                     "name": "Pre-Fetch Pre-Roll Player",
-                    "text": "WebSDK/Optimisation/PreRoll/PreRoll.md",
+                    "text": "Optimisation/PreRoll/PreRoll.md",
                     "code": [{
-                        "path": "WebSDK/Optimisation/PreRoll/PreRoll.code",
+                        "path": "Optimisation/PreRoll/PreRoll.code",
                         "type": "html"
                     }]
                 }
@@ -172,13 +172,13 @@
         },
         {
             "name": "Error Handling",
-            "text": "WebSDK/ErrorHandling/ErrorHandling.md",
+            "text": "ErrorHandling/ErrorHandling.md",
             "sections": [
                 {
                     "name": "Pre-Roll",
-                    "text": "WebSDK/ErrorHandling/PreRoll/PreRoll.md",
+                    "text": "ErrorHandling/PreRoll/PreRoll.md",
                     "code": [{
-                        "path": "WebSDK/ErrorHandling/PreRoll/PreRoll.code",
+                        "path": "ErrorHandling/PreRoll/PreRoll.code",
                         "type": "html",
                         "runnable": true,
                         "variables": [
@@ -198,11 +198,11 @@
         },
         {
             "name": "Demo Placements",
-            "text": "WebSDK/DemoPlacements.md"
+            "text": "DemoPlacements.md"
         },
         {
             "name": "Technical Support",
-            "text": "WebSDK/TechnicalSupport.md"
+            "text": "TechnicalSupport.md"
         }
     ]
 }
