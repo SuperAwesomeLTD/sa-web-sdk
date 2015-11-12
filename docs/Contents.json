@@ -1,208 +1,43 @@
 {
     "name": "Web SDK",
-    "text": "WebSDK.md",
+    "text": "00 Intro.md",
     "sections": [
         {
             "name": "Getting Started",
-            "text": "GettingStarted.md"
+            "text": "01 Getting Started.md"
         },
         {
-            "name": "Quick Start",
-            "text": "QuickStart/QuickStart.md",
+            "name": "Testing Placements",
+            "text": "02 Testing Placements.md"
+        },
+        {
+            "name": "Display Ads",
             "sections": [
                 {
-                    "name": "Display",
-                    "text": "QuickStart/Display/Display.md",
-                    "sections": [
-                        {
-                            "name": "Write",
-                            "text": "QuickStart/Display/Write/Write.md",
-                            "code": [{
-                                "path": "QuickStart/Display/Write/Write.code",
-                                "type": "html",
-                                "runnable": true,
-                                "variables": [
-                                    {
-                                        "name": "__APP_ID__",
-                                        "display_name": "App Id",
-                                        "demo_value": 14
-                                    },{
-                                        "name": "__PLACEMENT_ID__",
-                                        "display_name": "Placement Id",
-                                        "demo_value": 5246463
-                                    }
-                                ]
-                            }]
-                        },{
-                            "name": "Manual Placement",
-                            "text": "QuickStart/Display/Manual/Manual.md",
-                            "code": [{
-                                "path": "QuickStart/Display/Manual/Manual.code",
-                                "type": "html",
-                                "runnable": true,
-                                "variables": [
-                                    {
-                                        "name": "__APP_ID__",
-                                        "display_name": "App Id",
-                                        "demo_value": 14
-                                    },{
-                                        "name": "__PLACEMENT_ID__",
-                                        "display_name": "Placement Id",
-                                        "demo_value": 5246463
-                                    }
-                                ]
-                            }]
-                        }
-                    ]
-                },{
-                    "name": "Pre-Roll",
-                    "text": "QuickStart/PreRoll/PreRoll.md",
-                    "sections": [
-                        {
-                            "name": "Write",
-                            "text": "QuickStart/PreRoll/Write/Write.md",
-                            "code": [{
-                                "path": "QuickStart/PreRoll/Write/Write.code",
-                                "type": "html",
-                                "runnable": true,
-                                "variables": [
-                                    {
-                                        "name": "__APP_ID__",
-                                        "display_name": "App Id",
-                                        "demo_value": 14
-                                    },{
-                                        "name": "__PREROLL_ID__",
-                                        "display_name": "Pre-Roll Id",
-                                        "demo_value": 314228
-                                    }
-                                ]
-                            }]
-                        },{
-                            "name": "Manual Placement",
-                            "text": "QuickStart/PreRoll/Manual/Manual.md",
-                            "code": [{
-                                "path": "QuickStart/PreRoll/Manual/Manual.code",
-                                "type": "html",
-                                "runnable": true,
-                                "variables": [
-                                    {
-                                        "name": "__APP_ID__",
-                                        "display_name": "App Id",
-                                        "demo_value": 14
-                                    },{
-                                        "name": "__PREROLL_ID__",
-                                        "display_name": "Pre-Roll Id",
-                                        "demo_value": 314228
-                                    }
-                                ]
-                            }]
-                        },{
-                            "name": "Finish Callback",
-                            "text": "QuickStart/PreRoll/FinishCallback/FinishCallback.md",
-                            "code": [{
-                                "path": "QuickStart/PreRoll/FinishCallback/FinishCallback.code",
-                                "type": "html",
-                                "runnable": true,
-                                "variables": [
-                                    {
-                                        "name": "__APP_ID__",
-                                        "display_name": "App Id",
-                                        "demo_value": 14
-                                    },{
-                                        "name": "__PREROLL_ID__",
-                                        "display_name": "Pre-Roll Id",
-                                        "demo_value": 314228
-                                    }
-                                ]
-                            }]
-                        }
-                    ]
-                }
-            ]
-        },{
-            "name": "Topics",
-            "text": "Topics.md"
-        },{
-            "name": "Optimisation",
-            "text": "Optimisation/Optimisation.md",
-            "sections": [
+                    "name":"Simple Display Ads",
+                    "text":"03 Display Ads/01 Simple Display Ads.md"
+                },
                 {
-                    "name": "Load SDK Once",
-                    "text": "Optimisation/LoadSDKOnce/LoadSDKOnce.md",
-                    "code": [{
-                        "path": "Optimisation/LoadSDKOnce/LoadSDKOnce.code",
-                        "type": "html",
-                        "runnable": true,
-                        "variables": [
-                            {
-                                "name": "__APP_ID__",
-                                "display_name": "App Id",
-                                "demo_value": 14
-                            },{
-                                "name": "__PLACEMENT_ID_1__",
-                                "display_name": "Placement Id 1",
-                                "demo_value": 5246464
-                            },{
-                                "name": "__PLACEMENT_ID_2__",
-                                "display_name": "Placement Id 2",
-                                "demo_value": 5246463
-                            },{
-                                "name": "__PREROLL_ID__",
-                                "display_name": "Pre-Roll Id",
-                                "demo_value": 314228
-                            }
-                        ]
-                    }]
-                },{
-                    "name": "Specify App Id",
-                    "text": "Optimisation/AppID/AppID.md",
-                    "code": [{
-                        "path": "Optimisation/AppID/AppID.code",
-                        "type": "html"
-                    }]
-                },{
-                    "name": "Pre-Fetch Pre-Roll Player",
-                    "text": "Optimisation/PreRoll/PreRoll.md",
-                    "code": [{
-                        "path": "Optimisation/PreRoll/PreRoll.code",
-                        "type": "html"
-                    }]
+                    "name":"Add a Display Ad to a Div",
+                    "text":"03 Display Ads/02 Add a Display Ad to A Div.md"
+                },
+                {
+                    "name":"Async Loading",
+                    "text":"03 Display Ads/03 Async Loading.md"
                 }
             ]
         },
         {
-            "name": "Error Handling",
-            "text": "ErrorHandling/ErrorHandling.md",
-            "sections": [
-                {
-                    "name": "Pre-Roll",
-                    "text": "ErrorHandling/PreRoll/PreRoll.md",
-                    "code": [{
-                        "path": "ErrorHandling/PreRoll/PreRoll.code",
-                        "type": "html",
-                        "runnable": true,
-                        "variables": [
-                            {
-                                "name": "__APP_ID__",
-                                "display_name": "App Id",
-                                "demo_value": 14
-                            },{
-                                "name": "__PREROLL_ID__",
-                                "display_name": "Pre-Roll Id",
-                                "demo_value": 314228
-                            }
-                        ]
-                    }]
-                }
-            ]
-        },
-        {
-            "name": "Demo Placements",
-            "text": "DemoPlacements.md"
+            "name": "Video Ads",
+            "text": "04 Video Ads.md"
         },
         {
             "name": "Technical Support",
-            "text": "TechnicalSupport.md"
+            "text": "05 Technical Support.md"
+        },
+        {
+            "name": "License",
+            "text": "06 License.md"
         }
     ]
 }

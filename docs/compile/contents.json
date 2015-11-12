@@ -4,240 +4,40 @@
     "sections": [
         {
             "name": "Getting Started",
-            "text": "<p>If you haven&#39;t already registered your app on the SuperAwesome Dashboard, you can do that by going to <a href=\"http://dashboard.superawesome.tv\">http://dashboard.superawesome.tv</a>. Before we approve your user, you can start testing with our <a href=\"/docs/websdk/Demo%20Placements\">demo placements</a>.</p>\n<p><img src=\"img/dashboard.png\" alt=\"\" title=\"Registering an app on the dashboard\"></p>\n<p>Once your app is registered, you can create placements for it and use the documentation provided below to integrate these placements into your website.</p>\n"
+            "text": "<p>If you haven&#39;t already registered your app on the SuperAwesome Dashboard, you can do that by going to <a href=\"http://dashboard.superawesome.tv\">http://dashboard.superawesome.tv</a>. \nBefore we approve your user, you can start testing with our <a href=\"/docs/websdk/02%20Testing%20Placements\">test placements</a>.</p>\n<p><img src=\"img/01.Dashboard.png\" alt=\"\" title=\"Registering an app on the dashboard\"></p>\n<p>Once your app is registered, you can create placements for it and use the documentation provided below to integrate these placements into your website.</p>\n"
         },
         {
-            "name": "Quick Start",
-            "text": "<p>Jump straight to the snippets you need.</p>\n<ul>\n<li><a href=\"/docs/websdk/Quick Start/Display\">Display</a></li>\n<li><a href=\"/docs/websdk/Quick Start/Pre-Roll\">Pre-Roll</a></li>\n</ul>\n",
+            "name": "Testing Placements",
+            "text": "<p>The following demo placements that can be used for testing. These placements have a 100% fill rate.</p>\n<table>\n<thead>\n<tr>\n<th>Placement ID</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5687</td>\n<td>320x50 banner</td>\n</tr>\n<tr>\n<td>5692</td>\n<td>320x480 interstitial</td>\n</tr>\n<tr>\n<td>5740</td>\n<td>video</td>\n</tr>\n</tbody>\n</table>\n"
+        },
+        {
+            "name": "Display Ads",
             "sections": [
                 {
-                    "name": "Display",
-                    "text": "<p><img src=\"https://s3-eu-west-1.amazonaws.com/developer.superawesome.tv/display_example_sagames.png\" alt=\"\" title=\"Example Display Ad\"></p>\n<p>Most ad tags use <code>document.write</code> to write to the page as it is being loaded. If you would like to use this method, follow the <a href=\"/docs/websdk/Quick Start/Display/Write\">Write</a> instructions below.</p>\n<p>SuperAwesome&#39;s Web SDK also presents the option of creating an ad element and placing it after the page has loaded - this is preferable if the ad needs to be placed within a container that is generated using Javascript or in a template that is loaded asynchronously. If you would like to use this method, follow the <a href=\"/docs/websdk/Quick Start/Display/Manual Placement\">Manual Placement</a> instructions below.</p>\n",
-                    "sections": [
-                        {
-                            "name": "Write",
-                            "code": [
-                                {
-                                    "type": "html",
-                                    "runnable": true,
-                                    "variables": [
-                                        {
-                                            "name": "__APP_ID__",
-                                            "display_name": "App Id",
-                                            "demo_value": 14
-                                        },
-                                        {
-                                            "name": "__PLACEMENT_ID__",
-                                            "display_name": "Placement Id",
-                                            "demo_value": 5246463
-                                        }
-                                    ],
-                                    "contents": "<!--Include this script tag once per page-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n\n<script>\n\tnew SADisplay(__PLACEMENT_ID__).write();\n</script>"
-                                }
-                            ],
-                            "text": "<p>The code snippet to the right shows how to write placements to the page using <code>document.write</code>. This is the most common method for implementing display advertisements. Simply replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and the placement will be written into the HTML in the same location as the script tag.</p>\n"
-                        },
-                        {
-                            "name": "Manual Placement",
-                            "code": [
-                                {
-                                    "type": "html",
-                                    "runnable": true,
-                                    "variables": [
-                                        {
-                                            "name": "__APP_ID__",
-                                            "display_name": "App Id",
-                                            "demo_value": 14
-                                        },
-                                        {
-                                            "name": "__PLACEMENT_ID__",
-                                            "display_name": "Placement Id",
-                                            "demo_value": 5246463
-                                        }
-                                    ],
-                                    "contents": "<!--Include this script tag once per page-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n\n<div id=\"ad_area\"></div>\n<script>\n\tvar ad = new SADisplay(__PLACEMENT_ID__);\n\tdocument.getElementById(\"ad_area\").appendChild(ad.element);\n</script>"
-                                }
-                            ],
-                            "text": "<p>The code snippet to the right shows how to manually insert the placement using <code>.appendChild</code> on a parent element. This method allows you much more control over how the placement is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the placement after the initial document load.</p>\n<p>To use this method, replace the <code>__APP_ID__</code> and <code>__PLACEMENT_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the placement is inserted into the <code>div</code> with id <code>&quot;ad_area&quot;</code>.</p>\n"
-                        }
-                    ]
+                    "name": "Simple Display Ads",
+                    "text": "<p>The simplest way to load a display ad (banner, floor placement, etc) in your webpage is to load an AwesomeAds script tag in your HTML body.</p>\n<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ad.js?placement=5687&amp;test=true&quot;&gt;&lt;/script&gt;\n</code></pre><p>Notice the two parameters passed:</p>\n<ul>\n<li><code>placement=5687</code> - which specifies one of the test placements defined earlier. It&#39;s ok to replace 5687 with whatever placement you&#39;ve defined in the Dashboard</li>\n<li><code>test=true</code> - which specifies that this ad should be loaded in test mode. Again, when switching to your own placements, you&#39;ll need to delete this parameter</li>\n</ul>\n<p>An example webpage with this type of simple ad might look like the following:</p>\n<pre><code>\n&lt;html&gt;\n    &lt;head&gt;\n        &lt;title&gt;\n            AwesomeAds Example 1: Simple Banner\n        &lt;/title&gt;\n    &lt;/head&gt;\n    &lt;body&gt;\n        &lt;!--\n        - Invoke this script tag to make the simplest call to get a new ad\n        - @param: placement - the ID of the placement for which you want to load an ad\n        - @param: test - (can be true or false); specifies if the ad will be loaded in test mode or not \n        --&gt;\n        &lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ad.js?placement=5687&amp;test=true&quot;&gt;&lt;/script&gt;\n    &lt;/body&gt;\n&lt;/html&gt;\n</code></pre>"
                 },
                 {
-                    "name": "Pre-Roll",
-                    "text": "<p><img src=\"https://s3-eu-west-1.amazonaws.com/developer.superawesome.tv/pre_roll_example_sagames.png\" alt=\"\" title=\"Example Pre-Roll Ad\"></p>\n<p>SuperAwesome&#39;s Web SDK allows you to add pre-roll placements in the same manner as display placements - the pre-roll element can be written to the page as it is being loaded using <a href=\"/docs/websdk/Quick Start/Pre-Roll/Write\"><code>document.write</code></a>, or <a href=\"/docs/websdk/Quick Start/Pre-Roll/Manual Placement\">appended manually</a>.</p>\n<p>Both methods will create an element that will fill the maximum space available to it and overlay other content in the same container (using the CSS rule <code>position:absolute; width:100%; height:100%; z-index: 999;</code>). To constrain the dimensions of the pre-roll element, place it within a <code>div</code> with defined dimensions and the CSS rule <code>position:relative;</code>.</p>\n<p><strong>CodePen Pre-Roll demos may not work in Firefox or Internet Explorer. This is due to CodePen disabling Flash, which is used as the fallback video player in these browsers.</strong></p>\n",
-                    "sections": [
-                        {
-                            "name": "Write",
-                            "code": [
-                                {
-                                    "type": "html",
-                                    "runnable": true,
-                                    "variables": [
-                                        {
-                                            "name": "__APP_ID__",
-                                            "display_name": "App Id",
-                                            "demo_value": 14
-                                        },
-                                        {
-                                            "name": "__PREROLL_ID__",
-                                            "display_name": "Pre-Roll Id",
-                                            "demo_value": 314228
-                                        }
-                                    ],
-                                    "contents": "<!--Include this script tag once per page-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n\n<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START-->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END-->\n\n\t<script>\n\t\tnew SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n\t\n</div>"
-                                }
-                            ],
-                            "text": "<p>The code snippet to the right shows how to write pre-roll elements to the page using <code>document.write</code>. This method allows you to place the script tag where you would like the pre-roll element to appear on the page. Simply replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> in the snippet.</p>\n"
-                        },
-                        {
-                            "name": "Manual Placement",
-                            "code": [
-                                {
-                                    "type": "html",
-                                    "runnable": true,
-                                    "variables": [
-                                        {
-                                            "name": "__APP_ID__",
-                                            "display_name": "App Id",
-                                            "demo_value": 14
-                                        },
-                                        {
-                                            "name": "__PREROLL_ID__",
-                                            "display_name": "Pre-Roll Id",
-                                            "demo_value": 314228
-                                        }
-                                    ],
-                                    "contents": "<!--Include this script tag once per page-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n\n<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START-->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END-->\n</div>\n\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n</script>"
-                                }
-                            ],
-                            "text": "<p>The code snippet to the right shows how to manually insert the pre-roll element using <code>.appendChild</code> on a parent element. This method allows you much more control over how the pre-roll element is inserted into your page. This method is useful if you are loading parts of your page asynchronously, or modifying your page using Javascript and want to insert the pre-roll element after the initial document load.</p>\n<p>Replace the <code>__APP_ID__</code> and <code>__PREROLL_ID__</code> with your own and append <code>ad.element</code> to a container on the page.</p>\n<p>In the example provided, the pre-roll element is inserted into the <code>div</code> with id <code>&quot;pre_roll_area&quot;</code>.</p>\n"
-                        },
-                        {
-                            "name": "Finish Callback",
-                            "code": [
-                                {
-                                    "type": "html",
-                                    "runnable": true,
-                                    "variables": [
-                                        {
-                                            "name": "__APP_ID__",
-                                            "display_name": "App Id",
-                                            "demo_value": 14
-                                        },
-                                        {
-                                            "name": "__PREROLL_ID__",
-                                            "display_name": "Pre-Roll Id",
-                                            "demo_value": 314228
-                                        }
-                                    ],
-                                    "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START-->\n\t<div style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif;\">CONTENT</div>\n\t<!--CONTENT END-->\n</div>\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t//Optional callback\n\tad.finished(function(play_result){\n\t\talert(play_result);\n\t})\n</script>"
-                                }
-                            ],
-                            "text": "<p>The examples above show how to add a pre-roll element to a page and have it overlay other content in the same container. If you would like to receive a callback when the pre-roll has finished, use:</p>\n<pre><code>ad.finished(function(play_result){\n\n})\n</code></pre><p>The <code>play_result</code> parameter in the callback is an integer representing the result of the pre-roll play attempt. The possible values are:</p>\n<pre><code>0 - Nothing was shown\n1 - Pre-roll played successfully\n2 - A display banner was shown (only possible if the placement was configured to fallback to display)\n</code></pre>"
-                        }
-                    ]
+                    "name": "Add a Display Ad to a Div",
+                    "text": "<p>While the previous example is very simple, it does have the disadvantage that you don&#39;t have any control over where in the webpage the placement is displayed.\nIn order to have more control, you&#39;ll need to laod the ad in two steps.</p>\n<p>First, load the AwesomeAds SDK in your HTML file header:</p>\n<pre><code>&lt;head&gt;\n    &lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ads.js&quot;&gt;&lt;/script&gt;\n&lt;/head&gt;\n</code></pre><p>Notice there are no more parameters. You just load the SDK from the <code>https://ads.superawesome.tv/v2/ads.js</code> URL.\nYou&#39;ll then need a parent HTML element to place your ad in. This might be a <code>Div</code> tag, a table row or any HTML element.</p>\n<pre><code>&lt;body&gt;\n    &lt;div id=&quot;ad_area&quot; style=&quot;position:absolute; top:50px; width:320px; height:50px;&quot;&gt;&lt;/div&gt;\n&lt;/body&gt;\n</code></pre><p>Then, at the end of your BODY tag, or, if you&#39;re using jQuery, in the <code>document.ready()</code> function, you need to create a <code>AwesomeDisplay</code> object.</p>\n<pre><code>var ad = new AwesomeDisplay(5687).test();\ndocument.getElementById(&quot;ad_area&quot;).appendChild(ad.element);\n</code></pre><p>Notice the AwesomeDisplay object constructor takes just one parameter, the placement Id. Additionally you can specify if you&#39;re in test mode or not. </p>\n<p>An example webpage with this type of simple ad might look like the following:</p>\n<pre><code>\n&lt;html&gt;\n    &lt;head&gt;\n        &lt;title&gt;\n            AwesomeAds Example 2: Simple Banner\n        &lt;/title&gt;\n\n        &lt;!--\n        - First load in the pages&#39; hader the AwesomeAds SDK, as a Javascript file \n        --&gt;\n        &lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ads.js&quot;&gt;&lt;/script&gt;\n    &lt;/head&gt;\n    &lt;body&gt;\n\n        &lt;!--\n        - In the HTML body define a div with ID = &quot;ad_area&quot;\n        - aditionally you may want to specify width and height \n        --&gt;\n        &lt;div id=&quot;ad_area&quot; style=&quot;position:absolute; top:50px; width:320px; height:50px;&quot;&gt;&lt;/div&gt;\n\n        &lt;!--\n        - Finally, either at the end of the &lt;BODY&gt; tag or on jQuerys&#39; document.ready() function\n        you need to load the ad\n        - @step1: Create an AwesomeDisplay object name ad; \n            - specify the placement Id as an integer value\n            - specify whether the ad is in test mode or not\n        - @step2: Add the loaded ad content to the &lt;DIV&gt; element we defined earlier, as a child\n        --&gt;\n        &lt;script type=&quot;text/javascript&quot;&gt;\n            (function() {\n\n                var ad = new AwesomeDisplay(5687).test();\n                document.getElementById(&quot;ad_area&quot;).appendChild(ad.element);\n\n            })();\n        &lt;/script&gt;\n\n    &lt;/body&gt;\n&lt;/html&gt;\n</code></pre>"
+                },
+                {
+                    "name": "Async Loading",
+                    "text": "<p>If you want to load the AwesomeAds SDK async and start loading the ad once that&#39;s done, you can place the following code in your Body tag:</p>\n<pre><code>&lt;script class=&quot;awesome_ad_script&quot; type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ads.js&quot; async&gt;\n    //This script tag will be re-run when AwesomeAds loads\n    if(typeof AwesomeDisplay !== &quot;undefined&quot; &amp;&amp; window.awesome_ad_script){\n        var ad = new AwesomeDisplay(5687).test();\n        ad.insert(window.awesome_ad_script);\n    }\n&lt;/script&gt;\n</code></pre>"
                 }
             ]
         },
         {
-            "name": "Topics",
-            "text": "<ul>\n<li><a href=\"/docs/websdk/Optimisation\">Optimisation</a><ul>\n<li><a href=\"/docs/websdk/Optimisation/Load SDK Once\">Load SDK Once</a></li>\n<li><a href=\"/docs/websdk/Optimisation/Specify App Id\">Specify App Id</a></li>\n<li><a href=\"/docs/websdk/Optimisation/Pre-Fetch Pre-Roll Player\">Pre-Fetch Pre-Roll Player</a></li>\n</ul>\n</li>\n<li><a href=\"/docs/websdk/Error Handling\">Error Handling</a></li>\n</ul>\n"
-        },
-        {
-            "name": "Optimisation",
-            "text": "<p>Learn how to optimise the page loading time when using SuperAwesome&#39;s Web SDK.</p>\n",
-            "sections": [
-                {
-                    "name": "Load SDK Once",
-                    "code": [
-                        {
-                            "type": "html",
-                            "runnable": true,
-                            "variables": [
-                                {
-                                    "name": "__APP_ID__",
-                                    "display_name": "App Id",
-                                    "demo_value": 14
-                                },
-                                {
-                                    "name": "__PLACEMENT_ID_1__",
-                                    "display_name": "Placement Id 1",
-                                    "demo_value": 5246464
-                                },
-                                {
-                                    "name": "__PLACEMENT_ID_2__",
-                                    "display_name": "Placement Id 2",
-                                    "demo_value": 5246463
-                                },
-                                {
-                                    "name": "__PREROLL_ID__",
-                                    "display_name": "Pre-Roll Id",
-                                    "demo_value": 314228
-                                }
-                            ],
-                            "contents": "<!---SINGLE SDK SCRIPT-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__&pre_roll=true\"></script>\n\n<!---DISPLAY ADS-->\n<script>\n\tnew SADisplay(__PLACEMENT_ID_1__).write();\n\tnew SADisplay(__PLACEMENT_ID_2__).write();\n</script>\n\n<!---PRE-ROLL AD-->\n<div style=\"width: 480px; height: 320px; position: relative;\">\n\t<script>\n\t\tnew SAPreRoll(__PREROLL_ID__).write();\n\t</script>\n</div>"
-                        }
-                    ],
-                    "text": "<p>Each example provided in this documentation includes the necessary <code>&lt;script&gt;</code> tag that will load the SuperAwesome Web SDK. If you have multiple placements on your page, you can load the SDK just once before any of your placements are created and reduce the overhead for your users.</p>\n"
-                },
-                {
-                    "name": "Specify App Id",
-                    "code": [
-                        {
-                            "type": "html",
-                            "contents": "<!--No app_id-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js\"></script>\n\n<!--With app_id-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n"
-                        }
-                    ],
-                    "text": "<p>The SuperAwesome Web SDK tries to minimize the number of requests made from the user&#39;s browser. One way this is achieved is by specifying <code>app_id=__APP_ID__</code> in the <code>ads.js</code> script tag address. This allows the SuperAwesome Web SDK to pre-fetch the ad placement information for your app, thus reducing the time taken to load placements for the specified app id.</p>\n<p>Specifying the app id also acts as the default app id for placements, allowing you to omit the <code>app_id</code> parameter from the SADisplay and SAPreRoll constructors.</p>\n<p>If you do not specify an app_id, the first placement for each unique app id will make the request.</p>\n"
-                },
-                {
-                    "name": "Pre-Fetch Pre-Roll Player",
-                    "code": [
-                        {
-                            "type": "html",
-                            "contents": "<!--Without pre_roll=true-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__\"></script>\n\n<!--With pre_roll=true-->\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?app_id=__APP_ID__&pre_roll=true\"></script>\n"
-                        }
-                    ],
-                    "text": "<p>By default, the pre-roll player is not loaded by the SuperAwesome Web SDK. This is to reduce loading times for pages that only use display ads.</p>\n<p>To pre-fetch the pre-roll player, specify <code>pre_roll=true</code> in the script tag address.</p>\n<p><strong>Any example in this documentation that only shows display ads will not pre-fetch the pre-roll player, however all pre-roll examples will.</strong></p>\n"
-                }
-            ]
-        },
-        {
-            "name": "Error Handling",
-            "text": "<p>If your page would fail to display correctly if the user&#39;s browser is unable to load the SuperAwesome Web SDK, there are methods outlined below that would allow you to detect the problem and prevent it from causing an issue for users.</p>\n",
-            "sections": [
-                {
-                    "name": "Pre-Roll",
-                    "code": [
-                        {
-                            "type": "html",
-                            "runnable": true,
-                            "variables": [
-                                {
-                                    "name": "__APP_ID__",
-                                    "display_name": "App Id",
-                                    "demo_value": 14
-                                },
-                                {
-                                    "name": "__PREROLL_ID__",
-                                    "display_name": "Pre-Roll Id",
-                                    "demo_value": 314228
-                                }
-                            ],
-                            "contents": "<div id=\"pre_roll_area\" style=\"width: 480px; height: 320px; position: relative;\">\n\t<!--CONTENT START-->\n\t<div id=\"my_content\" style=\"width: 480px; height: 320px; text-align: center; font-size: 50px; line-height: 320px; color: white; background-color: #CE2805; font-family: sans-serif; display: none;\">CONTENT</div>\n\t<!--CONTENT END-->\n</div>\n\n<script type=\"text/javascript\" src=\"http://ads.superawesome.tv/v1/ads.js?pre_roll=true&app_id=__APP_ID__\"></script>\n<script>\n\n\tvar show_content = function(play_result){\n\t\tdocument.getElementById(\"my_content\").style.display = \"block\";\n\t}\n\n\tif(typeof SAPreRoll === 'undefined'){\n\t\tshow_content(0);\n\t} else {\n\t\tvar ad = new SAPreRoll(__PREROLL_ID__);\n\t\tdocument.getElementById(\"pre_roll_area\").appendChild(ad.element);\n\n\t\tad.finished(show_content);\n\t}\n\t\n</script>"
-                        }
-                    ],
-                    "text": "<p>If you are starting or revealing your content upon receiving a callback from <code>SAPreRoll.finished()</code>, then you may want to detect whether <code>SAPreRoll</code> was loaded successfully and if it was not, immediately show your content.</p>\n<p>In the example to the right, the <code>div</code> with id <code>my_content</code> is initially hidden using <code>style=&quot;display:none;&quot;</code>.</p>\n<p>The <code>show_content</code> function changes the <code>display</code> css property to <code>block</code> to reveal the content.</p>\n<p>If <code>SAPreRoll</code> is undefined (the SDK failed to load) then <code>show_content</code> is called immediately, showing the content.</p>\n<p>If <code>SAPreRoll</code> was loaded successfully then the pre-roll element is created and <code>show_content</code> is passed as the parameter to <code>ad.finished()</code> and will be called after the pre-roll has ended.</p>\n<p>To test the case where the SDK fails to load, use an invalid URL for the SDK script tag.</p>\n"
-                }
-            ]
-        },
-        {
-            "name": "Demo Placements",
-            "text": "<p>The following placements can be used for testing. These placements have a 100% fill rate.</p>\n<table>\n<thead>\n<tr>\n<th>App ID</th>\n<th>Placement ID</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>14</td>\n<td>5246475</td>\n<td>320x50 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246476</td>\n<td>300x50 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246463</td>\n<td>728x90 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246472</td>\n<td>300x250 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246468</td>\n<td>120x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246469</td>\n<td>160x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246470</td>\n<td>300x600 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>5246464</td>\n<td>468x60 banner</td>\n</tr>\n<tr>\n<td>14</td>\n<td>314228</td>\n<td>video</td>\n</tr>\n</tbody>\n</table>\n"
+            "name": "Video Ads",
+            "text": "<p>Video ads are loaded in much the same fashion. You&#39;ll first need to load the AwesomeAds SDK in your webpage head tag:</p>\n<pre><code>&lt;head&gt;\n    &lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ads.js?video=true&quot;&gt;&lt;/script&gt;\n&lt;/head&gt;\n</code></pre><p>Notice the <code>video=true</code> parameter when loading the script.</p>\n<p>Then, in the body tag, inside a script tag or in your document.ready() function, if you&#39;re using jQuery, you&#39;ll need to create an AwesomeVideo object, much the same way you created an AwesomeDisplay object.</p>\n<pre><code>var ad = new AwesomeVideo(5740).write();\n</code></pre><p>This will create the object, start loading it and write the output to the window.</p>\n<p>The AwesomeVideo object has two callbacks you might find useful:</p>\n<pre><code>ad.finished(function (){\n    console.log(&#39;This function gets called when the movie has ended playing&#39;);\n});\n\nad.setOnEmpty(function() {\n    console.log(&#39;This function gets called when the movie is empty / there is no valid movie to show&#39;);\n});\n</code></pre><p>A full example webpage with all these would look like the following:</p>\n<pre><code>&lt;html&gt;\n    &lt;head&gt;\n        &lt;title&gt;\n            AwesomeAds Example 4: Pre Roll\n        &lt;/title&gt;\n\n        &lt;!--\n        - The first thing to do is to load the AwesomeAds SDK in the header of the HTML file\n        - an additional step is to specify the video=true parameter\n        --&gt;\n        &lt;script type=&quot;text/javascript&quot; src=&quot;https://ads.superawesome.tv/v2/ads.js?video=true&quot;&gt;&lt;/script&gt;\n    &lt;/head&gt;\n    &lt;body&gt;\n\n        &lt;!--\n        - Inside the body of the HTML, create a new AwesomeVideo object, with a single parameter, the placement Id\n        - then write the new object to the window\n        - @callbacks:\n            - you can assign a &quot;finished&quot; callback to execute an action when the pre-roll finishes execution\n            - you can also assign an &quot;onEmpty&quot; callback in case the data received from the server is empty\n        --&gt;\n        &lt;script type=&quot;text/javascript&quot;&gt;\n\n            (function() {\n\n                var ad = new AwesomeVideo(24532).write();\n                ad.finished(function (){\n                    console.log(&#39;End of movie&#39;);\n                });\n                ad.setOnEmpty(function() {\n                    console.log(&#39;Empty movie&#39;);\n                });\n\n            })();\n\n        &lt;/script&gt;\n\n    &lt;/body&gt;\n&lt;/html&gt;\n</code></pre>"
         },
         {
             "name": "Technical Support",
             "text": "<p>If you have any questions or you need technical support, please, do not hesitate to contact us at <a href=\"devsupport@superawesome.tv\">devsupport@superawesome.tv</a>. We will make every attempt to answer your inquiry as quickly as possible.</p>\n"
+        },
+        {
+            "name": "License",
+            "text": "<p>See the LICENSE.txt file for more information.</p>\n"
         }
     ]
 }
