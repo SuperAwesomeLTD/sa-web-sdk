@@ -12,32 +12,23 @@
         },
         {
             "name": "Display Ads",
-            "sections": [
-                {
-                    "name":"Simple Display Ads",
-                    "text":"03 Display Ads/01 Simple Display Ads.md"
-                },
-                {
-                    "name":"Add a Display Ad to a Div",
-                    "text":"03 Display Ads/02 Add a Display Ad to A Div.md"
-                },
-                {
-                    "name":"Async Loading",
-                    "text":"03 Display Ads/03 Async Loading.md"
-                }
-            ]
+            "text": "03 Display Ads.md"
         },
         {
             "name": "Video Ads",
             "text": "04 Video Ads.md"
         },
         {
+            "name": "Interstitial Ads",
+            "text": "05 Interstitial Ads.md"
+        },
+        {
             "name": "Technical Support",
-            "text": "05 Technical Support.md"
+            "text": "06 Technical Support.md"
         },
         {
             "name": "License",
-            "text": "06 License.md"
+            "text": "07 License.md"
         }
     ]
 }
