@@ -50,29 +50,29 @@ A full example webpage with all these would look like the following:
 
 ```
 <html>
-	<head>
-		<title> AwesomeAds Example 2: Pre Roll </title>
-		<script type="text/javascript" src="https://ads.superawesome.tv/v2/ads.js?video=true"></script>
-	</head>
-	<body>
-		<div id="movie" width="320px" height="240px"></div>
-		<script type="text/javascript">
+    <head>
+        <title> AwesomeAds Example 2: Pre Roll </title>
+        <script type="text/javascript" src="https://ads.superawesome.tv/v2/ads.js?video=true"></script>
+    </head>
+    <body>
+        <div id="movie" style="width:320px;height:240px;"></div>
+        <script type="text/javascript">
 
-			(function() {
-			   
-			    var mov = document.getElementById("movie");
-			    var ad = new AwesomeVideo(5740, true, mov).write();
-				vad.finished(function(){
-					console.log('finished');
-				})
-				vad.setOnEmpty(function(){
-					console.log('empty');
-				});
+            (function() {
 
-			})();
+                var mov = document.getElementById("movie");
+                var vad = new AwesomeVideo(5740, true, mov).write();
+                vad.finished(function(){
+                    console.log('finished');
+                })
+                vad.setOnEmpty(function(){
+                    console.log('empty');
+                });
 
-		</script>
-	</body>
+            })();
+
+        </script>
+    </body>
 </html>
 
 ```

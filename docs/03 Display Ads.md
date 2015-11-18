@@ -26,22 +26,22 @@ An example webpage with this type of simple ad might look like the following:
 ```
 
 <html>
-	<head>
-		<title> AwesomeAds Example 2: Simple Banner </title>
-		<script type="text/javascript" src="https://ads.superawesome.tv/v2/ads.js"></script>
-	</head>
-	<body>
-		<div id="ad_area" style="position:absolute; top:50px; width:320px; height:50px;"></div>
-		<script type="text/javascript">
-			(function() {
-			   
-				var ad = new AwesomeDisplay(5687).test();
-				document.getElementById("ad_area").appendChild(ad.element);
-			    
-			})();
-		</script>
+    <head>
+        <title> AwesomeAds Example 2: Simple Banner </title>
+        <script type="text/javascript" src="https://ads.superawesome.tv/v2/ads.js"></script>
+    </head>
+    <body>
+        <div id="ad_area" style="position:absolute; top:50px; width:320px; height:50px;"></div>
+        <script type="text/javascript">
+            (function() {
 
-	</body>
+                var ad = new AwesomeDisplay(5687).test();
+                document.getElementById("ad_area").appendChild(ad.element);
+
+            })();
+        </script>
+
+    </body>
 </html>
 
 ```
