@@ -26,4 +26,4 @@ To create an interstitial ad you need to follow roughly the same steps as before
 
 ```
 
-The AwesomeInterstitialConstructor takes two parameters, placementId and testMode - true or false.
+The AwesomeInterstitial constructor takes two parameters, placementId and testMode - true or false.
