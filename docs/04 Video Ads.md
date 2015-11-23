@@ -12,20 +12,28 @@ Notice the `video=true` parameter when loading the script.
 Then, in the body tag, inside a script tag or in your document.ready() function, if you're using jQuery, you'll need to create an AwesomeVideo object, much the same way you created an AwesomeDisplay object.
 
 ```
-var vad = new AwesomeVideo(5740, true).write();
+var mov = document.getElementById("mov");
+var ad = new AwesomeVideo(5740, true, mov).write();
 
 ```
 
 This will create the object, start loading it and write the output to the window.
-The AwesomeVideo object constructor has two parameters, the placement id and whether to load the ad in test mode or not;
-Also, The AwesomeVideo object has two callbacks you might find useful:
+The AwesomeVideo object constructor has three parameters:
+ * The placement id 
+ * Is the ad in test mode or not
+ * The DOM element to write the video ad to 
+
+Also, The AwesomeVideo object has three callbacks you might find useful:
 
 ```
-vad.finished(function(){
+vad.onFinished(function(){
 	console.log('finished');
 })
-vad.setOnEmpty(function(){
+vad.onEmpty(function(){
 	console.log('empty');
+});
+vad.onError(function(){
+    console.log('Error'); 
 });
 
 ```
@@ -62,11 +70,14 @@ A full example webpage with all these would look like the following:
 
                 var mov = document.getElementById("movie");
                 var vad = new AwesomeVideo(5740, true, mov).write();
-                vad.finished(function(){
+                vad.onFinished(function(){
                     console.log('finished');
                 })
-                vad.setOnEmpty(function(){
+                vad.onEmpty(function(){
                     console.log('empty');
+                });
+                vad.onError(function(){
+                    console.log('error');
                 });
 
             })();
