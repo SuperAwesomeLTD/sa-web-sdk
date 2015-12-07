@@ -7,16 +7,16 @@
             "text": "01 Getting Started.md"
         },
         {
-            "name": "Testing Placements",
-            "text": "02 Testing Placements.md"
-        },
-        {
             "name": "Display Ads",
-            "text": "03 Display Ads.md"
+            "text": "02 Display Ads.md"
         },
         {
             "name": "Video Ads",
-            "text": "04 Video Ads.md"
+            "text": "03 Video Ads.md"
+        },
+        {
+            "name": "Video Ads Wrapper",
+            "text": "04 Video Ads Wrapper.md"
         },
         {
             "name": "Interstitial Ads",

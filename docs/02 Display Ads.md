@@ -27,7 +27,7 @@ An example webpage with this type of simple ad might look like the following:
 
 <html>
     <head>
-        <title> AwesomeAds Example 2: Simple Banner </title>
+        <title> AwesomeAds Example 1: Simple Banner </title>
         <script type="text/javascript" src="https://ads.superawesome.tv/v2/ads.js"></script>
     </head>
     <body>
