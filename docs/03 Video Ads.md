@@ -13,15 +13,15 @@ Then, in the body tag, inside a script tag or in your document.ready() function,
 
 ```
 var mov = document.getElementById("mov");
-var ad = new AwesomeVideo(5740, true, mov).write();
+var ad = new AwesomeVideo(30479, true, mov).write();
 
 ```
 
 This will create the object, start loading it and write the output to the window.
 The AwesomeVideo object constructor has three parameters:
- * The placement id 
+ * The placement id
  * Is the ad in test mode or not
- * The DOM element to write the video ad to 
+ * The DOM element to write the video ad to
 
 Also, The AwesomeVideo object has three callbacks you might find useful:
 
@@ -33,7 +33,7 @@ vad.onEmpty(function(){
 	console.log('empty');
 });
 vad.onError(function(){
-    console.log('Error'); 
+    console.log('Error');
 });
 
 ```
@@ -50,7 +50,7 @@ and then change the AwesomeVideo constructor object as follows:
 
 ```
 var mov = document.getElementById("movie");
-var vad = new AwesomeVideo(5740, true, mov).write();
+var vad = new AwesomeVideo(30479, true, mov).write();
 
 ```
 
@@ -69,7 +69,7 @@ A full example webpage with all these would look like the following:
             (function() {
 
                 var mov = document.getElementById("movie");
-                var vad = new AwesomeVideo(5740, true, mov).write();
+                var vad = new AwesomeVideo(30479, true, mov).write();
                 vad.onFinished(function(){
                     console.log('finished');
                 })

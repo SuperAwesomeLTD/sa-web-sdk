@@ -14,12 +14,12 @@ The first thing to do is include the SDK in your HTML header.
 Then, at the end of your BODY tag, or, if you're using jQuery, in the `document.ready()` function, you need to create a `AwesomeDisplay` object.
 
 ```
-var ad = new AwesomeDisplay(5687).test();
+var ad = new AwesomeDisplay(30471).test();
 document.getElementById("ad_area").appendChild(ad.element);
 
 ```
 
-Notice the AwesomeDisplay object constructor takes just one parameter, the placement Id. Additionally you can specify if you're in test mode or not. 
+Notice the AwesomeDisplay object constructor takes just one parameter, the placement Id. Additionally you can specify if you're in test mode or not.
 
 An example webpage with this type of simple ad might look like the following:
 
@@ -35,7 +35,7 @@ An example webpage with this type of simple ad might look like the following:
         <script type="text/javascript">
             (function() {
 
-                var ad = new AwesomeDisplay(5687).test();
+                var ad = new AwesomeDisplay(30471).test();
                 document.getElementById("ad_area").appendChild(ad.element);
 
             })();
