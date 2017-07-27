@@ -1,5 +1,0 @@
-![](https://s3-eu-west-1.amazonaws.com/developer.superawesome.tv/display_example_sagames.png "Example Display Ad")
-
-Most ad tags use ```document.write``` to write to the page as it is being loaded. If you would like to use this method, follow the [Write](/docs/websdk/Quick Start/Display/Write) instructions below.
-
-SuperAwesome's Web SDK also presents the option of creating an ad element and placing it after the page has loaded - this is preferable if the ad needs to be placed within a container that is generated using Javascript or in a template that is loaded asynchronously. If you would like to use this method, follow the [Manual Placement](/docs/websdk/Quick Start/Display/Manual Placement) instructions below.
